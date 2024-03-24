@@ -14,20 +14,26 @@ export default function Home() {
   return (
     <div className="aspect-w-16 aspect-h-9 min-h-screen bg-orange-100 overflow-hidden flex justify-center items-center">
       <div className="w-3/4 h-3/4">
-        <Card className="p-8 m-10 content-center">
-        <CardContent className="grid grid-cols-2 gap-6 pt-6">
-        <div className="flex flex-col justify-center items-center m-8">
-          <iframe src="https://lottie.host/embed/d16e4fcb-fddd-44b8-9ced-18606864327b/qhZRJNqBpV.json" className="w-full h-full"></iframe>
-        </div>
-        <div className="flex flex-col justify-evenly m-8">
-          <p className="m-5 text-start">Free-Response Prompt</p>
-          <div className="flex justify-start"> {/* Aligns input to the left */}
-            <Input type="search" placeholder="Answer here..." className="w-full h-60 m-5 px-8 text-start"/>
+        <Card className="p-8 m-10">
+        <CardContent className="p-20 grid grid-cols-2 gap-8">
+          <div className="flex flex-col justify-center">
+            <p className="text-center">iFrame</p>
           </div>
-          <div className="flex justify-center"> {/* Aligns button to the center */}
-            <Button type="submit" className="w-full m-5 rounded-md justify-center items-center">Submit</Button>
+          <div className="flex flex-col justify-center">
+            <p className="m-5 text-center">MC Prompt</p>
+            <Button variant="outline" size='lg' className="rounded-lg m-2">
+              Option A
+            </Button>
+            <Button variant="outline" size='lg' className="rounded-lg m-2">
+              Option B
+            </Button>
+            <Button variant="outline" size='lg' className="rounded-lg m-2">
+              Option C
+            </Button>
+            <Button variant="outline" size='lg' className="rounded-lg m-2">
+              Option D
+            </Button>
           </div>
-        </div>
         </CardContent>
       </Card>
       <div className="absolute top-2 left-0 -mt-16 -ml-16 w-40 h-40 bg-red-500 rounded-full opacity-50 shadow-lg"></div>
