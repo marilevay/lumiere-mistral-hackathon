@@ -17,7 +17,7 @@ export default function Home() {
         <Card className="p-8 m-10">
         <CardContent className="p-20 grid grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
-            <p className="text-center">iFrame</p>
+            <iframe src="https://lottie.host/embed/d16e4fcb-fddd-44b8-9ced-18606864327b/qhZRJNqBpV.json" className="w-full h-full"></iframe>
           </div>
           <div className="flex flex-col justify-center">
             <p className="m-5 text-center">MC Prompt</p>
